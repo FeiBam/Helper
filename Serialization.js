@@ -5,12 +5,8 @@ class Serialization{
         }
         this.father = father
         this.Reverse = Reverse
-        if (!father){
-            this.Target = JSON.parse(JSON.stringify(Target))
-        }
-        else {
-            this.Target = Target
-        }
+        if (!father) this.Target = JSON.parse(JSON.stringify(Target))
+        else this.Target = Target
         this.Maps = Maps
         this.SaveObject = {}
         this.TargetKeys = Object.keys(Target)
